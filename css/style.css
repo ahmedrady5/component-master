@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #e6eff6;
+  max-height: 100vh;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 100px auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.main {
+  border-radius: 6px;
+  box-shadow: 0 0 10px #ccc;
+  overflow: hidden;
+  width: fit-content;
+  margin: auto;
+}
+header {
+  background-color: #ffffff;
+  padding: 40px 35px;
+}
+header h2 {
+  color: #2bb3b1;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+header h3 {
+  color: #bfdf32;
+  margin-bottom: 10px;
+}
+header p {
+  line-height: 1.7;
+  font-size: 14px;
+  color: #acacb5;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .info {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.sub,
+.us {
+  padding: 40px 35px;
+}
+.sub {
+  min-width: 50%;
+  background-color: #2bb3b1;
+}
+.sub h3 {
+  color: white;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+.sub .price {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.sub .price span {
+  font-size: 16px;
+  font-weight: normal;
+  margin-left: 5px;
+  color: #ade2e5;
+}
+.sub p {
+  color: white;
+  margin-bottom: 18px;
+}
+.sub a {
+  background-color: #bfdf32;
+  padding: 15px;
+  display: block;
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 0 10px #9a9a9a;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+@media (max-width: 767px) {
+  .info a {
+    margin: auto;
+    width: 100%;
+  }
+}
+.us {
+  background-color: #4abebd;
+  min-width: 100%;
+}
+.us h3 {
+  color: white;
+  margin-bottom: 20px;
+}
+.us p {
+  display: block;
+  font-size: 14px;
+  color: white;
+  line-height: 1.7;
+  max-width: 250px;
+}
